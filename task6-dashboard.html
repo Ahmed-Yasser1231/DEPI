@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Dashboard</h1>
+        </div>
+        <form role="search">
+            <label for="search">Search:</label>
+            <input 
+                type="search" 
+                id="search" 
+                name="search" 
+                placeholder="Search dashboard..."
+                aria-label="Search dashboard">
+            <button type="submit">Search</button>
+        </form>
+        <div class="user-profile">
+            <p>Welcome, User</p>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav aria-label="Sidebar Navigation">
+        <h2>Menu</h2>
+        
+        <!-- Dashboard Section -->
+        <section>
+            <h3>Dashboard</h3>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#reports">Reports</a></li>
+            </ul>
+        </section>
+
+        <!-- Management Section -->
+        <section>
+            <h3>Management</h3>
+            <ul>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+            </ul>
+        </section>
+
+        <!-- Settings Section -->
+        <section>
+            <h3>Settings</h3>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#preferences">Preferences</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#billing">Billing</a></li>
+            </ul>
+        </section>
+
+        <!-- Support Section -->
+        <section>
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#help">Help Center</a></li>
+                <li><a href="#contact">Contact Support</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <h2>Dashboard Overview</h2>
+
+        <!-- Statistics Cards Section -->
+        <section class="stats-cards">
+            <h3>Statistics</h3>
+            
+            <article>
+                <header>
+                    <h4>Total Users</h4>
+                </header>
+                <p><strong>1,234</strong></p>
+                <footer>
+                    <p>↑ 12% from last month</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h4>Revenue</h4>
+                </header>
+                <p><strong>$45,678</strong></p>
+                <footer>
+                    <p>↑ 8% from last month</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h4>Orders</h4>
+                </header>
+                <p><strong>567</strong></p>
+                <footer>
+                    <p>↓ 3% from last month</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h4>Products</h4>
+                </header>
+                <p><strong>89</strong></p>
+                <footer>
+                    <p>→ No change</p>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Latest Transactions Table -->
+        <section class="transactions">
+            <h3>Latest Transactions</h3>
+            <table border="1">
+                <caption>Recent Transaction History</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Transaction ID</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#TXN-001</td>
+                        <td>John Smith</td>
+                        <td>Premium Plan</td>
+                        <td>$99.00</td>
+                        <td>Completed</td>
+                        <td>2024-01-15</td>
+                    </tr>
+                    <tr>
+                        <td>#TXN-002</td>
+                        <td>Sarah Johnson</td>
+                        <td>Basic Plan</td>
+                        <td>$29.00</td>
+                        <td>Completed</td>
+                        <td>2024-01-15</td>
+                    </tr>
+                    <tr>
+                        <td>#TXN-003</td>
+                        <td>Michael Brown</td>
+                        <td>Enterprise Plan</td>
+                        <td>$299.00</td>
+                        <td>Pending</td>
+                        <td>2024-01-14</td>
+                    </tr>
+                    <tr>
+                        <td>#TXN-004</td>
+                        <td>Emily Davis</td>
+                        <td>Pro Plan</td>
+                        <td>$59.00</td>
+                        <td>Completed</td>
+                        <td>2024-01-14</td>
+                    </tr>
+                    <tr>
+                        <td>#TXN-005</td>
+                        <td>David Wilson</td>
+                        <td>Basic Plan</td>
+                        <td>$29.00</td>
+                        <td>Failed</td>
+                        <td>2024-01-13</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td><strong>$515.00</strong></td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Performance Charts Section -->
+        <section class="charts">
+            <h3>Performance Overview</h3>
+            
+            <article>
+                <header>
+                    <h4>Monthly Revenue Chart</h4>
+                </header>
+                <p>[Chart placeholder - Revenue trends for the past 6 months]</p>
+                <details>
+                    <summary>View Details</summary>
+                    <ul>
+                        <li>January: $35,000</li>
+                        <li>February: $38,000</li>
+                        <li>March: $42,000</li>
+                        <li>April: $39,000</li>
+                        <li>May: $44,000</li>
+                        <li>June: $45,678</li>
+                    </ul>
+                </details>
+            </article>
+
+            <article>
+                <header>
+                    <h4>User Growth Chart</h4>
+                </header>
+                <p>[Chart placeholder - User registration trends]</p>
+                <details>
+                    <summary>View Details</summary>
+                    <ul>
+                        <li>New Users This Month: 234</li>
+                        <li>Active Users: 1,100</li>
+                        <li>Inactive Users: 134</li>
+                    </ul>
+                </details>
+            </article>
+        </section>
+    </main>
+
+    <!-- Notifications Widget (Aside) -->
+    <aside aria-label="Notifications">
+        <h2>Notifications</h2>
+        
+        <section class="notification">
+            <h3>New Order</h3>
+            <p>You have a new order from John Smith</p>
+            <time datetime="2024-01-15T10:30">10:30 AM</time>
+        </section>
+
+        <section class="notification">
+            <h3>Payment Received</h3>
+            <p>Payment of $99.00 received from Sarah Johnson</p>
+            <time datetime="2024-01-15T09:45">9:45 AM</time>
+        </section>
+
+        <section class="notification">
+            <h3>Low Stock Alert</h3>
+            <p>Product "Premium Plan" is running low on stock</p>
+            <time datetime="2024-01-15T08:15">8:15 AM</time>
+        </section>
+
+        <section class="notification">
+            <h3>System Update</h3>
+            <p>System maintenance scheduled for tonight at 2:00 AM</p>
+            <time datetime="2024-01-14T16:00">Yesterday</time>
+        </section>
+
+        <section class="notification">
+            <h3>New User Registration</h3>
+            <p>Emily Davis has registered for a Pro Plan</p>
+            <time datetime="2024-01-14T14:20">Yesterday</time>
+        </section>
+
+        <footer>
+            <a href="#all-notifications">View All Notifications</a>
+        </footer>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dashboard. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

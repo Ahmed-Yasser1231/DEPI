@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us. Contact our team for inquiries, support, or to discuss your project needs.">
+    <meta name="keywords" content="contact, get in touch, support, inquiries">
+    <meta name="author" content="Ahmed Yasser">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.yourwebsite.com/contact.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact Us - Your Company Name">
+    <meta property="og:description" content="Get in touch with us. Contact our team for inquiries, support, or to discuss your project needs.">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/contact-og-image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com/contact.html">
+    <meta property="og:type" content="website">
+    
+    <title>Task 5</title>
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo">
+            <h1>Your Company</h1>
+        </div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Contact</li>
+        </ol>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <article>
+            <header>
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you. Fill out the form below or use our contact information.</p>
+            </header>
+
+            <section class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        
+                        <div>
+                            <label for="name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="name-help">
+                            <small id="name-help">Please enter your full name</small>
+                        </div>
+
+                        <div>
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                aria-required="true"
+                                aria-describedby="email-help"
+                                aria-invalid="false">
+                            <small id="email-help">We'll never share your email</small>
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                placeholder="123-456-7890"
+                                aria-describedby="phone-help">
+                            <small id="phone-help">Optional - Format: 123-456-7890</small>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        
+                        <div>
+                            <label for="subject">Subject *</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="subject-help">
+                            <small id="subject-help">Brief description of your inquiry</small>
+                        </div>
+
+                        <div>
+                            <label for="message">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                cols="50" 
+                                required 
+                                aria-required="true"
+                                aria-describedby="message-help"></textarea>
+                            <small id="message-help">Please provide details about your inquiry</small>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <button type="submit">Send Message</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="contact-info">
+                <h3>Other Ways to Reach Us</h3>
+                <address>
+                    <p><strong>Email:</strong> <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    <p><strong>Address:</strong> 123 Business Street, Suite 100, City, State 12345</p>
+                </address>
+
+                <figure>
+                    <img src="images/office-location.jpg" alt="Our office location map">
+                    <figcaption>Visit us at our main office</figcaption>
+                </figure>
+            </section>
+
+            <section class="business-hours">
+                <h3>Business Hours</h3>
+                <ul>
+                    <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                    <li>Saturday: 10:00 AM - 4:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Aside for FAQ -->
+        <aside>
+            <h3>Frequently Asked Questions</h3>
+            <section>
+                <h4>How quickly will you respond?</h4>
+                <p>We typically respond within 24 hours during business days.</p>
+            </section>
+            <section>
+                <h4>Do you offer consultations?</h4>
+                <p>Yes, we offer free initial consultations to discuss your needs.</p>
+            </section>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: ay622004@gmail.com</p>
+            <p>Phone: 01123537624</p>
+        </section>
+        <section class="social-links">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </section>
+        <p>&copy; 2025 Ahmed Yasser. All rights reserved.</p>
+    </footer>
+</body>
+</html>
