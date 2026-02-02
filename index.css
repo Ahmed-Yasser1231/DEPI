@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0b0d3c, #1a1f6b);
+  color: white;
+}
+
+.app {
+  padding: 40px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.search input {
+  width: 300px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+.search button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #4f6bff;
+  color: white;
+}
+
+
+.main {
+  display: flex;
+  gap: 30px;
+}
+
+
+.weather-card {
+  position: relative; 
+  width: 65%;
+  background: linear-gradient(135deg, #4b5cff, #6a5cff);
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.temp span {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+}
+
+
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.details div {
+  background: rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 15px;
+  width: 22%;
+  text-align: center;
+}
+
+
+.hourly {
+  width: 35%;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.hour {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.daily {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.day {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 100px;
+}
