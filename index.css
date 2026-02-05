@@ -1,17 +1,93 @@
-body {
+*{
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
   background: linear-gradient(135deg, #0b0d3c, #1a1f6b);
-  color: white;
+  color : white;
 }
 
-.app {
-  padding: 40px;
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 30px;
+.nav .icon{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+}
+
+.nav .icon p {
+  font-size:18px;
+  font-weight:600;
+}
+
+
+.nav .icon img{
+  width: 50px;
+  height: 50px;
+}
+
+/* Button container */
+.nav .dropdown-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:10px 14px;
+  background:#303757;
+  color:#fff;
+
+  border-radius:10px;
+  cursor:pointer;
+  user-select:none;
+
+  transition:0.2s ease;
+}
+
+/* Hover effect */
+.nav .dropdown-btn:hover{
+  background:#495183;
+}
+
+/* Icon style */
+.nav .icon{
+  font-size:14px;
+  opacity:0.9;
+}
+
+/* Text */
+.nav .label{
+  font-size:14px;
+  font-weight:500;
+}
+
+/* Arrow */
+.nav .arrow{
+  font-size:12px;
+  opacity:0.7;
+}
+
+
+.header{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+}
+
+.header p{
+  margin-top:60px;
+  text-align:center;
+  font-size: 50px;
+  font-weight:550;
+  width: 75%;
 }
 
 .search {
@@ -19,6 +95,7 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 .search input {
@@ -26,6 +103,13 @@ body {
   padding: 12px;
   border-radius: 10px;
   border: none;
+  background-color: #373c6d;
+  color : white;
+}
+
+.search input::placeholder {
+  color: #96979c;  
+  opacity: 1;       
 }
 
 .search button {
@@ -34,83 +118,120 @@ body {
   border: none;
   background: #4f6bff;
   color: white;
+  cursor:pointer;
 }
 
 
-.main {
-  display: flex;
-  gap: 30px;
+.container{
+  display:flex;
+  gap:25px;
+  margin: 0 auto;
+  width: 70%;
 }
 
 
-.weather-card {
-  position: relative; 
-  width: 65%;
-  background: linear-gradient(135deg, #4b5cff, #6a5cff);
-  padding: 30px;
-  border-radius: 25px;
+/* LEFT */
+.left{
+  flex:2;
+  width: 60%;
 }
 
-.temp {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.temp span {
-  font-size: 80px;
-  font-weight: bold;
-}
-
-.icon {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 60px;
+/* MAIN CARD */
+.main-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#3b3fb8,#5b2dc4);
+  width: 91%;
 }
 
 
-
-.details {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+.main-card p{
+  opacity:.7;
+  margin-top:5px;
 }
 
-.details div {
-  background: rgba(0,0,0,0.2);
-  padding: 15px;
-  border-radius: 15px;
-  width: 22%;
-  text-align: center;
+.temp{
+  font-size:48px;
+  font-weight:bold;
+}
+
+/* STATS */
+.stats{
+  display:flex;
+  gap:15px;
+  margin-top:20px;
+}
+
+.box{
+  flex:1;
+  background:#1a1d3a;
+  padding:20px;
+  border-radius:14px;
+}
+
+.box span{
+  font-size:14px;
+  opacity:.7;
+}
+
+.box h3{
+  margin-top:8px;
+  font-size:22px;
+}
+
+/* DAILY */
+.title{
+  margin:25px 0 10px;
+}
+
+.daily{
+  display:flex;
+  gap:12px;
+}
+
+.day{
+  background:#1a1d3a;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  width:70px;
 }
 
 
-.hourly {
-  width: 35%;
-  background: rgba(255,255,255,0.08);
-  padding: 20px;
-  border-radius: 25px;
+
+
+/* RIGHT PANEL */
+.right{
+  flex:1;
+  background:#1a1d3a;
+  padding:20px;
+  border-radius:18px;
 }
 
-.hour {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+.hour-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
 }
 
-
-.daily {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
+.hour-title button{
+  background:#2a2d4a;
+  border:none;
+  color:white;
+  padding:6px 10px;
+  border-radius:8px;
+  cursor:pointer;
 }
 
-.day {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  width: 100px;
+.hour{
+  background:#2a2d4a;
+  padding:12px;
+  border-radius:10px;
+  margin-bottom:10px;
+  display:flex;
+  justify-content:space-between;
 }
